@@ -1,0 +1,33 @@
+.header, .main, .nav, .sidebar, .ad, .footer{
+    border: 1px solid green;
+    background-color: greenyellow;
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.nav{
+    grid-area: nav;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.ad{
+    grid-area: ad;
+}
+.footer{
+    grid-area: footer;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "nav main main sidebar"
+    "nav main main ad"
+    "footer footer footer footer";
+}

@@ -1,0 +1,26 @@
+.header, .main, .nav, .sidebar, .ad, .footer{
+    border: 1px solid green;
+    background-color: greenyellow;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100vh;
+    gap: 20px;
+}
+.header, .footer{
+    grid-column: span 5;
+    grid-row: span 1;
+}
+.nav{
+    grid-column: span 1;
+    grid-row: span 4;
+}
+.main{
+    grid-column: span 3;
+    grid-row: span 4;
+}
+.sidebar, .ad{
+    grid-column: span 1;
+    grid-row: span 2;
+}
